@@ -31,7 +31,7 @@ class Agreement extends Component {
     fetch("http://localhost:4000/agreements/" + this.props.id, {
       method: "delete"
     })
-    .then(response => this.agreementsPage());
+    .then(response => window.location.reload());
   }
 
   agreementsPage() {
