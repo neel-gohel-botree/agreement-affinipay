@@ -1,0 +1,10 @@
+{
+	"users": [
+		{
+			"id": "1",
+			"email": "owner@affinipay.com",
+			"password": "password",
+			"authentication_token": "b73e9b3241a35138eaacf1f9f776d797"
+		}
+	]
+}
