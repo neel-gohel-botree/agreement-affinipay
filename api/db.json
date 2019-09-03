@@ -1,10 +1,99 @@
 {
-	"users": [
-		{
-			"id": "1",
-			"email": "owner@affinipay.com",
-			"password": "password",
-			"authentication_token": "b73e9b3241a35138eaacf1f9f776d797"
-		}
-	]
+  "users": [
+    {
+      "id": "1",
+      "email": "owner@affinipay.com",
+      "password": "password",
+      "authentication_token": "b73e9b3241a35138eaacf1f9f776d797"
+    }
+  ],
+  "agreements": [
+    {
+      "id": 1,
+      "first_name": "Caitilyn",
+      "last_name": "Parks",
+      "status": "Sent",
+      "date_created": "2/18/2019",
+      "days_out": "0",
+      "date_accepted": ""
+    },
+    {
+      "id": 2,
+      "first_name": "Dewey",
+      "last_name": "Webber",
+      "status": "Viewed",
+      "date_created": "2/10/2019",
+      "days_out": "2",
+      "date_accepted": ""
+    },
+    {
+      "id": 3,
+      "first_name": "Cohan",
+      "last_name": "Clarkson",
+      "status": "Accepted",
+      "date_created": "2/10/2019",
+      "days_out": "0",
+      "date_accepted": "2/10/2019"
+    },
+    {
+      "id": 4,
+      "first_name": "Blanche",
+      "last_name": "Shaffer",
+      "status": "Accepted",
+      "date_created": "2/07/2019",
+      "days_out": "0",
+      "date_accepted": "2/07/2019"
+    },
+    {
+      "id": 5,
+      "first_name": "Rosemary",
+      "last_name": "Hardy",
+      "status": "Ready",
+      "date_created": "2/06/2019",
+      "days_out": "6",
+      "date_accepted": ""
+    }
+  ],
+  "merchants": [
+    {
+      "id": 1,
+      "name": "AffiniPay",
+      "support_email": "owner@affinipay.com",
+      "phone": "9789879878",
+      "address": "123 Main Street",
+      "additional_address": "Suite 300",
+      "city": "Austin",
+      "state": "TX",
+      "postal_code": "02360",
+      "country": "US"
+    },
+    {
+      "id": 2,
+      "name": "Lawpay",
+      "support_email": "owner@lawpay.com",
+      "phone": "9789879878",
+      "address": "123 Main Street",
+      "additional_address": "Suite 300",
+      "city": "Austin",
+      "state": "TX",
+      "postal_code": "02360",
+      "country": "US"
+    }
+  ],
+  "payment_pages": [
+    {
+      "id": 1,
+      "page_url": "http://local.affinipay.test:3000/pages/affinipay/asdqwe",
+      "account_type": "Operating (Merchant - TEST)",
+      "ach_details": "Bank ACH (eCheck - TEST)",
+      "merchant_id": 1
+    },
+    {
+      "id": 2,
+      "page_url": "http://local.lawpay.test:3000/pages/lawpay/asdqwe",
+      "account_type": "Operating (Merchant - TEST)",
+      "ach_details": "Bank ACH (eCheck - TEST)",
+      "merchant_id": 2
+    }
+  ]
 }

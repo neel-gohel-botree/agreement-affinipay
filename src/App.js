@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './Login.js';
 import Agreements from './Agreements.js';
+import AddAgreement from './AddAgreement';
 import Logout from './Logout.js';
 import {
   BrowserRouter as Router,
@@ -26,9 +27,10 @@ class App extends React.Component {
             <Logout history={history} />
           </header>
 				  <Route path="/login" component={Login}/>
-          <PrivateRoute path='/agreements' component={Agreements} />
+          <PrivateRoute path="/agreements/new" component={AddAgreement} />
+          <PrivateRoute exact path='/agreements' component={Agreements} />
           <Route exact path="/" render={() => (
-              <Redirect to="/agreements"/>
+            <Redirect to="/agreements"/>
           )}/>
         </div>
       </Router>
